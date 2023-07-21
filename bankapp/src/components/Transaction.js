@@ -1,12 +1,42 @@
 import React from 'react'
+import { Row, Container } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
 
 function Transaction(props) {
     return (
         <div className='transactionItem'>
-            <h2>{props.transactionTitle}</h2>
-            <h3>{props.key}</h3>
-            <h4>{props.category}</h4>
-            <h5>{props.amount}</h5>
+            <Container>
+                <Row>
+                    <Col>
+                        <div>
+                            <span>{props.transactionTitle}</span>
+
+
+                        </div>
+                    </Col>
+                    <Col>
+                        <div>
+                            <span className='amount'>{props.amount}</span>
+
+
+                        </div>
+                    </Col>
+                    <Col>
+                        <div>
+                            <span>{props.category}</span>
+
+                        </div>
+
+
+                    </Col>
+
+                </Row>
+
+
+            </Container>
+
+
+
         </div>
     )
 }

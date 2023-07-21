@@ -14,7 +14,7 @@ function TranscationList(props) {
 
 
     return (
-        <div>
+        <div className='transactionList'>
             {transactionArray}
         </div>
     )

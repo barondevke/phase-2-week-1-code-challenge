@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <h2 className='header'>Welcome to Flatiron Bank</h2>
       <TranscationList data={data} />
     </div>
   );
