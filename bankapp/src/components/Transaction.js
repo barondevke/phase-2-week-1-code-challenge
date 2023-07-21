@@ -16,14 +16,15 @@ function Transaction(props) {
                     </Col>
                     <Col>
                         <div>
-                            <span className='amount'>{props.amount}</span>
-
+                            <span>{props.category}</span>
 
                         </div>
                     </Col>
                     <Col>
                         <div>
-                            <span>{props.category}</span>
+                            <h4 className='amount'>{props.amount}</h4>
+
+
 
                         </div>
 
@@ -35,7 +36,7 @@ function Transaction(props) {
 
             </Container>
 
-
+            <hr />
 
         </div>
     )
