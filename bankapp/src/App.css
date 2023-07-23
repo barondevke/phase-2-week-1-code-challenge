@@ -2,6 +2,7 @@
 
 .App {
   display: block;
+  background-color: #2C3333;
 
 }
 
@@ -11,10 +12,13 @@
 
 .transactionList {
   margin: 3%;
+  background-color: #fff;
+
 }
 
 .transactionHeading {
   margin: 2%;
+
 }
 
 .Filter {
@@ -24,6 +28,12 @@
 .header {
   margin-bottom: 1%;
   text-align: center;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  color: white;
 }
 
 
@@ -109,6 +119,7 @@ form {
 
 .amount {
   padding-left: 40%;
+
 }
 
 .searchBar {

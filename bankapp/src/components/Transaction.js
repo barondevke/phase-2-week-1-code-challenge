@@ -9,7 +9,7 @@ function Transaction(props) {
                 <Row>
                     <Col>
                         <div>
-                            <span>{props.transactionTitle}</span>
+                            <span className='title'>{props.transactionTitle}</span>
 
 
                         </div>

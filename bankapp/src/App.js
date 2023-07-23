@@ -22,7 +22,7 @@ function App() {
       <h2 className='header'>Welcome to Flatiron Bank</h2>
 
       <TranscationList data={data} />
-
+      <h5 className='footer'>Steve Ndaba. Copyright 2023</h5>
     </div>
   );
 }
