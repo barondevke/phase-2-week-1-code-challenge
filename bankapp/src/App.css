@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
 .App {
   display: block;
 
@@ -7,8 +9,21 @@
   margin: 2.5%;
 }
 
+.transactionList {
+  margin: 3%;
+}
+
+.transactionHeading {
+  margin: 2%;
+}
+
+.Filter {
+  margin: 4%;
+}
+
 .header {
   margin-bottom: 1%;
+  text-align: center;
 }
 
 
@@ -54,7 +69,22 @@ input[type=submit]:hover {
 }
 
 .addBtn {
-  margin: 2% 50%;
+  margin: 2%;
+
+}
+
+.addBtndiv {
+
+  padding-left: 30%;
+}
+
+.buttons {
+  margin-bottom: 5%;
+}
+
+.showDiv {
+  padding-top: 0.5%;
+  padding-right: 20%;
 }
 
 form {
@@ -66,7 +96,7 @@ form {
 }
 
 .nameHeading {
-  padding-left: 62%;
+  padding-left: 64%;
 }
 
 .categoryHeading {
@@ -79,4 +109,48 @@ form {
 
 .amount {
   padding-left: 40%;
+}
+
+.searchBar {
+  padding-left: 20%;
+}
+
+
+
+
+button {
+
+  font-family: Raleway;
+  font-weight: 0;
+  font-size: 19px;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+
+.addTHeading {
+  text-align: center;
+}
+
+.AddingForm {
+  margin: 5% 0;
 }

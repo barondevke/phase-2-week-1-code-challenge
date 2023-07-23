@@ -83,8 +83,9 @@ function Form(props) {
     });
 
     return (
-        <div>
+        <div className="AddingForm">
             {listOfTransactions}
+            <h4 className="addTHeading">Add Transactions</h4>
             <form onSubmit={handleSubmit}>
                 <Row>
                     <Col>
