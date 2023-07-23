@@ -60,3 +60,23 @@ input[type=submit]:hover {
 form {
   margin-right: 30%;
 }
+
+.category {
+  margin-left: 20%;
+}
+
+.nameHeading {
+  padding-left: 62%;
+}
+
+.categoryHeading {
+  padding-left: 29%;
+}
+
+.amountHeading {
+  padding-right: 10%;
+}
+
+.amount {
+  padding-left: 40%;
+}

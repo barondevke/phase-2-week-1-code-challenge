@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Col from 'react-bootstrap/Col'
-import { Row, Container } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 
-function Form() {
+function Form(props) {
     const [date, setDate] = useState("");
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
     const [amount, setAmount] = useState(0);
+    let currentData = props.data
 
     const [submittedData, setSubmittedData] = useState([]);
 
@@ -45,33 +46,37 @@ function Form() {
 
     const listOfTransactions = submittedData.map((data, index) => {
         return (
-            <div key={index}>
-                <Row>
-                    <Col>
-                        <div>
-                            <span>{data.description}</span>
+            <div className='transactionItem' key={index}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div>
+                                <span>{data.description}</span>
 
 
-                        </div>
-                    </Col>
-                    <Col>
-                        <div>
-                            <span>{data.category}</span>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div>
+                                <span className='category'>{data.category}</span>
 
-                        </div>
-                    </Col>
-                    <Col>
-                        <div>
-                            <h4 className='amount'>{data.amount}</h4>
-
-
-
-                        </div>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div>
+                                <h4 className='amount'>{data.amount}</h4>
 
 
-                    </Col>
 
-                </Row>
+                            </div>
+
+
+                        </Col>
+
+                    </Row>
+
+
+                </Container>
 
             </div>
         );
@@ -79,6 +84,7 @@ function Form() {
 
     return (
         <div>
+            {listOfTransactions}
             <form onSubmit={handleSubmit}>
                 <Row>
                     <Col>
@@ -132,8 +138,8 @@ function Form() {
 
                 <button className="submitBtn" type="submit">Submit</button>
             </form>
-            <h3>Added Transactions</h3>
-            {listOfTransactions}
+
+
 
         </div>
 

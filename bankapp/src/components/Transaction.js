@@ -16,7 +16,7 @@ function Transaction(props) {
                     </Col>
                     <Col>
                         <div>
-                            <span>{props.category}</span>
+                            <span className='category'>{props.category}</span>
 
                         </div>
                     </Col>
